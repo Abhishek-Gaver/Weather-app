@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #53aacc 0%, #2e39cf 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 4px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding-top: 1%;
+}
+
+.container>h1 {
+    padding-bottom: 0.5%;
+    font-weight: 600;
+    font-size: 38px;
+
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+
+}
+
+#type-loc {
+    box-sizing: border-box;
+    background-color: #d0d4f8;
+    font-size: 22px;
+    padding: 1.5% 3%;
+    margin: 1% 20px;
+    border-radius: 12px;
+    width: 80vw;
+    border: none;
+    box-shadow: 3px 3px 8px 2px #2e39cf;
+}
+
+#search-btn {
+    box-sizing: border-box;
+    background-color: #d0d4f8;
+    font-size: 22px;
+    padding: 1.5% 3%;
+    margin: 1% 20px;
+    border-radius: 12px;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px 2px #2e39cf;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    /* width: 80vww; */
+    height: auto;
+    margin: 1%;
+    padding: 0% 2%;
+    color: #131c56;
+
+}
+
+.weather-item {
+    width: 70vw;
+    padding: 1% 2%;
+    margin: 1% 2%;
+    border-radius: 12px;
+    border: 2px solid #2e39cf;
+    box-shadow: 3px 3px 8px 2px #2e39cf;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1% 0 2% 0;
+    }
+
+    .container>h1 {
+        padding-bottom: 2%;
+        font-weight: 600;
+        font-size: 28px;
+
+    }
+
+    #type-loc {
+        font-size: 14px;
+        padding: 1.2% 2%;
+        margin: 12px 1%;
+        border-radius: 8px;
+    }
+
+    #search-btn {
+        font-size: 14px;
+        padding: 1.2% 2%;
+        margin: 12px 1%;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    #type-loc {
+        font-size: 10px;
+        padding: 1.2% 3%;
+        margin: 12px 1%;
+        border-radius: 8px;
+    }
+
+    #search-btn {
+        font-size: 10px;
+        padding: 1.2% 3%;
+        margin: 12px 1%;
+        border-radius: 8px;
+    }
+
+    
+}
+
+@media (max-width: 425px) {
+    .weather-item {
+        font-size: 16px;
+        width: 85vw;
+        padding: 2% 2%;
+        margin: 3% 0%;
+        border-radius: 8px;
+    }
+}
