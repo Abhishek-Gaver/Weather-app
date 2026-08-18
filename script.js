@@ -1,4 +1,5 @@
 async function searchWeather() {
+    try{
     let city = document.getElementById("type-loc").value
     if (city === "") {
         alert("Please enter a city name")
@@ -20,6 +21,10 @@ async function searchWeather() {
     document.getElementById("humidity").innerHTML = "Humidity: " + info.main.humidity + "%"
     document.getElementById("pressure").innerHTML = "Pressure: " + info.main.pressure + " hPa"
     document.getElementById("wind-speed").innerHTML = "Wind Speed: " + info.wind.speed + " m/s"
+    } catch(error){
+        alert("City not found. Please check the spelling and try again.")
+        console.log(error)
+    }
 }
 
 document.getElementById("search-btn").addEventListener("click", searchWeather)
