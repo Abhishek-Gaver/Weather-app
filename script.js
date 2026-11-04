@@ -11,8 +11,8 @@ async function searchWeather() {
     let x = await fetch(url);
     let info = await x.json();
 
-    let celsius = info.main.temp - 273.15
-    let feelsLikeCelsius = info.main.feels_like - 273.15
+    let celsius = (info.main.temp - 273.15).toFixed(2);
+    let feelsLikeCelsius = (info.main.feels_like - 273.15).toFixed(2)
 
     document.getElementById("city-name").innerHTML = "City: " + info.name
     document.getElementById("temp").innerHTML = "Temperature: " + celsius + "°C"
